@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+html {
+    position: relative;
+    min-height: 100vh;
+    background-color: #E1E8EE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bf884ad570b50659c5fa2dc2cfb20ecf&auto=format&fit=crop&w=1000&q=100');
+
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.95;
+    }
+}
+
+.form-parent {
+    display: flex;
+    flex-direction: row;
+    transition: 1s;
+    animation: show 1.5s 1;
+    animation-fill-mode: forwards;
+}
+
+.form-structor {
+    background-color: #fff;
+    border-radius: 15px;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+    .form-profile {}
+
+    .form-payment-button {
+        position: relative;
+        display: inline;
+    }
+
+    .form-payment {
+        visibility: hidden;
+        display: none;
+    }
+
+    .field {
+        border: 0;
+        outline: none;
+        box-shadow: none;
+        display: block;
+        min-height: 30px;
+        line-height: 30px;
+        padding: 8px 15px;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.field.fullname {
+    font-size: 24px;
+    font-weight: bold;
+}
